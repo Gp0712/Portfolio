@@ -10,11 +10,11 @@
 <body>
     <h1>Demand Survey Sheet</h1>
     <h3>Please fill this form that we can help to choose the right scool for you!</h3>
-    <div class="form">
+    <div>
     <form action="gypanker@hotmail.com" method="post">
      <fieldset>
       <legend>Personal details</legend>
-          <label for="first_name" class="first_name">First name:</label><br>
+          <label for="first_name">First name:</label><br>
           <input id="first_name" name="first_name" type="text" placeholder="Add your first name" required><br><br>
           <label for="last_name">Last name:</label><br>
           <input id="last_name" name="last_name" type="text" placeholder="Add your last name" required><br><br>
@@ -24,9 +24,9 @@
           <input id="dob" name="dob" type="date" required><br><br>
           <label for="sex">Gender:</label><br>
           <input id="sex" name="sex" type="radio" required>Male
-          <input type="radio" name=sex required>Female<br><br>
+          <input type="radio" name="sex" required>Female<br><br>
           <label for="phon_num">Telephone:</label><br>
-          <input id="phon_num" type="tel"><span style="font-size:.7em">Not required</span>
+          <input id="phon_num" type="tel"><span class="phon_num">Not required</span>
     </fieldset><br><br>
     <fieldset>
        <legend>Your interest</legend>
@@ -53,7 +53,7 @@
          </select><br><br>
          <p>Which  major do you want to apply for?</p>
          <p>IT:</p>
-         <label><input id="front-end" type="checkbox">Front-end</label>
+         <label><input type="checkbox">Front-end</label>
          <label><input type="checkbox">Back-end</label>
          <label><input type="checkbox">UI</label>
          <label><input type="checkbox">Full-stack</label>
@@ -67,7 +67,7 @@
          <label><input type="checkbox">Electrical</label>
          <label><input type="checkbox">Chemical</label><br><br>
          <p>Which city would you like to study in?</p>
-         <input id="city" list="cities"  name="cities">
+         <input list="cities"  name="cities">
           <datalist id="cities">
             <option value="Athlone">
             <option value="Carlow">
