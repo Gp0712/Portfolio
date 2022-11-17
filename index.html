@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Demand Survey Sheet</h1>
+    <h3>Please fill this form that we can help to choose the right scool for you!</h3>
+    <div class="form">
+    <form action="gypanker@hotmail.com" method="post">
+     <fieldset>
+      <legend>Personal details</legend>
+          <label for="first_name" class="first_name">First name:</label><br>
+          <input id="first_name" name="first_name" type="text" placeholder="Add your first name" required><br><br>
+          <label for="last_name">Last name:</label><br>
+          <input id="last_name" name="last_name" type="text" placeholder="Add your last name" required><br><br>
+          <label for="email">E-mail:</label><br>
+          <input id="email" name="email" type="email" placeholder="Add your email address" required><br><br>
+          <label for="dob">DoB:</label><br>
+          <input id="dob" name="dob" type="date" required><br><br>
+          <label for="sex">Gender:</label><br>
+          <input id="sex" name="sex" type="radio" required>Male
+          <input type="radio" name=sex required>Female<br><br>
+          <label for="phon_num">Telephone:</label><br>
+          <input id="phon_num" type="tel"><span style="font-size:.7em">Not required</span>
+    </fieldset><br><br>
+    <fieldset>
+       <legend>Your interest</legend>
+        <p>What type of school are you interested in?</p>
+        <label for="school-type">Choose the type of school:</label>
+         <select name="school-type" id="school-type">
+            <option value="select">select</option>
+            <option value="university-fulltime">University full-time</option>
+            <option value="university-correspondence">University correspondence course</option>
+            <option value="college-fulltime">College full-time</option>
+            <option value="college-correspondence">College correspondence course</option>
+         </select><br><br>
+        <p>What type of course are you interested in?</p>
+        <label for="school-type">Choose the type of course:</label>
+         <select name="course-type" id="course-type">
+            <optgroup label=University>
+              <option value="it">IT</option>
+              <option value="human">Human</option>
+              <option value="engineering" selected>Engineering</option>
+            </optgroup>
+            <optgroup label="College">
+                <option value="it">IT</option>
+                <option value="human">Human</option>
+                <option value="engineering">Engineering</option>
+            </optgroup>
+         </select><br><br>
+         <p>Which  major do you want to apply for?</p>
+         <p>IT:</p>
+         <label><input id="front-end" type="checkbox">Front-end</label>
+         <label><input type="checkbox">Back-end</label>
+         <label><input type="checkbox">UI</label>
+         <label><input type="checkbox">Full-stack</label>
+         <p>Human:</p>
+         <label><input type="checkbox">English</label>
+         <label><input type="checkbox">History</label>
+         <label><input type="checkbox">Foreign Language</label>
+         <p>Engineering:</p>
+         <label><input type="checkbox">General</label>
+         <label><input type="checkbox">Mechanical</label>
+         <label><input type="checkbox">Electrical</label>
+         <label><input type="checkbox">Chemical</label><br><br>
+         <p>Which city would you like to study in?</p>
+         <input id="city" list="cities"  name="cities">
+          <datalist id="cities">
+            <option value="Athlone">
+            <option value="Carlow">
+            <option value="Cork">
+            <option value="Dublin">
+            <option value="Dun Laoghaire">
+            <option value="Galway">
+            <option value="Limerick">
+          </datalist>    
+    </fieldset><br><br>
+        <p>Give us a comment:</p>
+         <textarea rows="5" cols="35" maxlength="2500" placeholder="Write your comment here!"></textarea>
+         <input type="submit" value="Submit">
+   </form>
+</div>
+</body>
+</html>

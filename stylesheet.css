@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(Corpus.jpg);
+    background-color: slategrey;
+    background-size: 100% 100%;
+}
+h1{
+    text-align: center;
+    padding: 70px 0 40px 0;
+}
+h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+div{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: lightgray;
+}
+label{
+    margin: 15px 5px;
+}
+input{
+    margin: 7px 0 0 5px;
+}
+p{
+    margin: 15px 5px;
+}
+fieldset{
+    padding-top: 30px;
+    margin: 10px;
+}
+legend{
+    background-color: darkgray;
+    text-align: center;
+}
+
+
