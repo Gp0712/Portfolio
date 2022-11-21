@@ -11,22 +11,22 @@
     <h1>Demand Survey Sheet</h1>
     <h3>Please fill this form that we can help to choose the right scool for you!</h3>
     <div>
-    <form action="gypanker@hotmail.com" method="post">
+    <form action="mailto:gypanker@hotmail.com" method="post">
      <fieldset>
       <legend>Personal details</legend>
-          <label for="first_name">First name:</label><br>
+          <label for="first_name">First name:</label>
           <input id="first_name" name="first_name" type="text" placeholder="Add your first name" required><br><br>
-          <label for="last_name">Last name:</label><br>
+          <label for="last_name">Last name:</label>
           <input id="last_name" name="last_name" type="text" placeholder="Add your last name" required><br><br>
-          <label for="email">E-mail:</label><br>
+          <label for="email">E-mail:</label>
           <input id="email" name="email" type="email" placeholder="Add your email address" required><br><br>
-          <label for="dob">DoB:</label><br>
+          <label for="dob">DoB:</label>
           <input id="dob" name="dob" type="date" required><br><br>
-          <label for="sex">Gender:</label><br>
-          <input id="sex" name="sex" type="radio" required>Male
-          <input type="radio" name="sex" required>Female<br><br>
-          <label for="phon_num">Telephone:</label><br>
-          <input id="phon_num" type="tel"><span class="phon_num">Not required</span>
+          <label for="sex" name="sex">Gender:</label>
+          <input id="sex" name="sex" type="radio" value="male" required>Male
+          <input type="radio" name="sex" value="female" required>Female<br><br>
+          <label for="phon_num">Telephone:</label>
+          <input id="phon_num" name="phon_num" type="tel"><span class="phon_num">Not required</span>
     </fieldset><br><br>
     <fieldset>
        <legend>Your interest</legend>
@@ -38,7 +38,7 @@
             <option value="correspondence">Correspondence course</option>
          </select><br><br>
         <p>What type of course are you interested in?</p>
-        <label for="school-type">Choose the type of course:</label>
+        <label for="course-type">Choose the type of course:</label>
          <select name="course-type" id="course-type">
             <optgroup label=University>
               <option value="it">IT</option>
@@ -52,7 +52,7 @@
             </optgroup>
          </select><br><br>
          <p>Which  major do you want to apply for?</p>
-         <p>IT:</p>
+         <p class="top">IT:</p> 
          <label><input type="checkbox">Front-end</label>
          <label><input type="checkbox">Back-end</label>
          <label><input type="checkbox">UI</label>
@@ -78,8 +78,8 @@
             <option value="Limerick">
           </datalist>    
     </fieldset><br><br>
-        <p>Give us a comment:</p>
-         <textarea rows="5" cols="12" maxlength="2500" placeholder="Write your comment here!"></textarea>
+        <p class="comment">Give us a comment:</p>
+         <textarea name="comment" rows="5" cols="12" maxlength="2500" placeholder="Write your comment here!"></textarea>
          <input type="submit" value="Submit">
    </form>
 </div>
