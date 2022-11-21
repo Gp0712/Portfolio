@@ -26,17 +26,27 @@ div{
     background-color: rgba(211, 211, 211, 0.8);
 }
 label{
-    margin: 15px 5px;
+    margin: 15px 7px;
     display: inline-block;
+}
+input:hover{
+    box-shadow: 5px 5px 2px darkgray;
+}
+select:hover{
+    box-shadow: 5px 5px 2px darkgray;
 }
 input{
     margin: 7px 0 0 5px;
 }
 p{
-    margin: 15px 5px;
+    margin: 45px 5px 1px;
+    font-weight: bold;
+}
+.quest{
+    font-size: 1.2em;
 }
 .top{
-    margin-top: 20px
+    margin-top: 25px
 }
 fieldset{
     padding: 30px 10px;
@@ -48,7 +58,8 @@ legend{
     text-align: center;
 }
 .comment{
-    margin-left: 40px;;
+    margin-left: 25px;
+    margin-bottom: 10px;
 }
 textarea{
     width:55vw;
