@@ -1,0 +1,154 @@
+/* General ///////////////// */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --green:rgb(126, 186, 86);
+}
+
+/* Main ////////////////// */
+body{
+    background-color: rgb(0, 0, 11);
+}
+h1 {
+    color:var(--green);
+    text-align: center;
+    padding-top: 2em;
+}
+.logo{
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    right:0%;
+    width: 100px;
+    padding-right: 1%;
+    top:12%;
+    background-color: rgb(13, 13, 17);
+    z-index: 1;
+ }
+ .color:hover{
+    color:gray;
+ }
+
+/* Portfolio ///////////// */
+.portfolios{
+    height: 100vh;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly; 
+    align-items:self-end;
+    gap: 2em;
+    
+}
+.portfolio1{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 1)) , url(assets/survey-form.png);
+    width: 621px;
+    height: 310px;
+    background-position:0 0,center;
+    background-size:100% 100%,cover;
+    background-repeat:no-repeat;
+    transition: 0.7s; 
+    border:var(--green) solid 2px;
+}
+.portfolios h3{
+    position: relative;
+    top: 40%;
+    font-size: 2em;
+    font-weight: 100;
+    text-align:center;
+    color:gray  
+}
+.portfolio1:hover{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 1)) , url(assets/survey-form.png);
+    background-size:100% 0% ,cover;
+    transform: scale(1.1);
+   
+}
+.portfolio2{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 1)) , url(assets/roman-numbers-calculator.png);
+    width: 621px;
+    height: 310px;
+    background-position:0 0,center;
+    background-size:100% 100%,cover;
+    background-repeat:no-repeat;
+    transition: 0.7s; 
+    color:white;
+    text-align: center;
+    border:var(--green) solid 2px;
+}
+.portfolio2:hover{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 1)) , url(assets/roman-numbers-calculator.png);
+    background-size:100% 0% ,cover;
+    transform: scale(1.1);
+}
+.portfolio3{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 1)) , url(assets/calory-calculator.png);
+    width: 621px;
+    height: 310px;
+    background-position:0 0,center;
+    background-size:100% 100%,cover;
+    background-repeat:no-repeat;
+    transition: 0.7s; 
+    color:white;
+    text-align: center;
+    border:var(--green) solid 2px;
+}
+.portfolio3:hover{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 1)) , url(assets/calory-calculator.png);
+    background-size:100% 0% ,cover;
+    transform: scale(1.1);
+}
+
+/* Nav bar ///////////// */
+#navbar{
+    position: fixed;
+    right:0%;
+    height: 100vh;
+    padding-top: 12%;
+    background-color: rgb(13, 13, 17); 
+}
+ul{
+    height: 50vh;
+    width: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+a{
+    color:var(--green);
+    text-decoration: none;
+}
+.portfolio{
+    text-decoration: underline;
+}
+
+/* Footer ////////////// */
+
+.footer{
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    width: 100px;
+    height: 200px;
+    color:var(--green);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.icon:hover{
+    color: rgb(128, 128, 128);
+ }

@@ -4,84 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/d88c8a8544.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <h1>Demand Survey Sheet</h1>
-    <h3>Please fill this form that we can help to choose the right scool for you!</h3>
+   <header>
+    <div class="logo">
+        <a><img src="assets/logo.png" class="logo" alt="logo"></a>
+    </div>
+    <nav id="navbar">
+        <ul>
+            <li><a class="mainpage color" href="index.html">Main Page</a></li>
+                <li><a class="aboutme color"  href="aboutme.html">About Me</a></li>
+                <li><a class="portfolio color" href="portfolio.html">My works</a></li>
+                <li><a class="contactme color" href="contactme.html">Contact Me</a></li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+    <section id="mainpage">
+        <div class="mainpage-container">
+            <div ><a><img class="fullLogo" src="assets/fullLogo.png" alt="fullLogo"></a></div><br>
+        </div>
+    </section>
+   </main>
+   <footer class="footer">
     <div>
-    <form action="mailto:gypanker@hotmail.com" method="post">
-     <fieldset>
-      <legend>Personal details</legend>
-          <label for="first_name">First name:</label>
-          <input id="first_name" name="first_name" type="text" placeholder="Add your first name" required><br><br>
-          <label for="last_name">Last name:</label>
-          <input id="last_name" name="last_name" type="text" placeholder="Add your last name" required><br><br>
-          <label for="email">E-mail:</label>
-          <input id="email" name="email" type="email" placeholder="Add your email address" required><br><br>
-          <label for="dob">DoB:</label>
-          <input id="dob" name="dob" type="date" required><br><br>
-          <label for="sex">Gender:</label>
-          <input id="sex" name="sex" type="radio" value="male" required>Male
-          <input type="radio" name="sex" value="female" required>Female<br><br>
-          <label for="phon_num">Telephone:</label>
-          <input id="phon_num" name="phon_num" type="tel"><span class="phon_num">Not required</span>
-    </fieldset><br><br>
-    <fieldset>
-       <legend>Your interest</legend>
-        <p class="quest">What type of school are you interested in?</p>
-        <label for="school-type">Choose the type of school:</label>
-         <select name="school-type" id="school-type">
-            <option value="select">select</option>
-            <option value="fulltime">Full-time course</option>
-            <option value="correspondence">Correspondence course</option>
-         </select><br><br>
-        <p class="quest">What type of course are you interested in?</p>
-        <label for="course-type">Choose the type of course:</label>
-         <select name="course-type" id="course-type">
-            <optgroup label=University>
-              <option value="it">IT</option>
-              <option value="human">Human</option>
-              <option value="engineering" selected>Engineering</option>
-            </optgroup>
-            <optgroup label="College">
-                <option value="it">IT</option>
-                <option value="human">Human</option>
-                <option value="engineering">Engineering</option>
-            </optgroup>
-         </select><br><br>
-         <p class="quest">Which  major do you want to apply for?</p>
-         <p class="top">IT:</p> 
-         <label><input type="checkbox">Front-end</label>
-         <label><input type="checkbox">Back-end</label>
-         <label><input type="checkbox">UI</label>
-         <label><input type="checkbox">Full-stack</label>
-         <p>Human:</p>
-         <label><input type="checkbox">English</label>
-         <label><input type="checkbox">History</label>
-         <label><input type="checkbox">Foreign Language</label>
-         <p>Engineering:</p>
-         <label><input type="checkbox">General</label>
-         <label><input type="checkbox">Mechanical</label>
-         <label><input type="checkbox">Electrical</label>
-         <label><input type="checkbox">Chemical</label><br><br>
-         <p>Which city would you like to study in?</p>
-         <input list="cities"  name="cities">
-          <datalist id="cities">
-            <option value="Athlone">
-            <option value="Carlow">
-            <option value="Cork">
-            <option value="Dublin">
-            <option value="Dun Laoghaire">
-            <option value="Galway">
-            <option value="Limerick">
-          </datalist>    
-    </fieldset><br><br>
-        <p class="comment">Give us a comment:</p>
-         <textarea name="comment" rows="5" cols="12" maxlength="2500" placeholder="Write your comment here!"></textarea>
-         <input type="submit" value="Submit">
-   </form>
-</div>
+            <a href="https://www.linkedin.com/in/george-panker-3b802984/"><i class="fa-brands fa-linkedin icon"></i></a>
+            <a href="https://github.com/Gp0712?tab=repositories"><i class="fa-brands fa-square-github icon"></i></a><br><br>
+            <div>&copy; 2023</div>
+    </div>
+</footer>
 </body>
 </html>
