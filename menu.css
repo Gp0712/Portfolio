@@ -1,0 +1,96 @@
+.menu{
+    width: 80vw;
+    height: 85vh;
+    padding: 25vw 20vw;
+    margin-top: -20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+     align-items: flex-start;
+    list-style: none;
+    font-size: 1.7rem;
+    color: var(--black);
+    font-family: var(--numans);
+    font-weight: 800;
+   }
+.card{
+    width: 80vw;
+    height: 75vh;
+    margin: 17vw auto;
+    background-color: rgb(224, 233, 241);
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px  rgb(37, 36, 36);  
+}
+.back{
+    height: 18vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 80vw;
+    background:linear-gradient(rgb(170, 175, 180) 20%,  rgb(224, 233, 241) 80%);
+    border-radius: 10px 10px 0 0;
+ }
+.logo-black{
+        background-image: url(assets/logo-black.webp);
+        position: relative;
+        margin-left: -15vw;
+        width: 10vw;
+        height: 5vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat:no-repeat;
+}
+ .name-black{
+        position:absolute;
+        top: 6vw;
+        left: 15vw;
+        background-image: url(assets/name-black.webp);
+        width: 42vw;
+        height: 8vw;
+        background-size:contain;
+        background-repeat:no-repeat;
+}
+.close-m{
+    position: relative;
+    right: -16vw;
+    color: var(--black);
+    font-family: var(--kalam);
+    font-size:2.7rem;
+    font-weight: 100;
+}
+.inside-list{
+    height: 27vw;
+    width: 50vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+    font-size: 1.1rem;
+}
+.iconMenu{
+    color: var(--black);
+    margin: 2vw;
+    scale: 1.5;
+}
+.color{
+    color: var(--black);
+    font-family: var(--numans);
+}
+
+/* Media query ///////// */
+
+@media screen and (max-width: 360px){
+
+    .menu{
+        font-size: 1.1rem;
+    }
+    .close-m{
+        font-size: 2rem;
+    }
+    .inside-list{   
+        font-size: 0.8rem;
+    }
+}
