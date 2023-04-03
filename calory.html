@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Numans&family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600;1,800&display=swap"
+      rel="stylesheet">
+    <Link rel="stylesheet" href="calory.css">
+    <script src="calory.js"></script>
+    <title>Calory calculator</title>
+</head>
+<body>
+  <a href="index.html"><div class="logo"></div></a>
+  <div class="name"></div>
+    <h1>Calory calculator</h1>
+    <div class="main">
+  <div class="container">
+    <a href="kaloria.html"><div id="lang"></div></a>
+    <p>Give the requared data please!</p><br><br>
+    <input id="gender" type="radio" name="gender">
+    <label for="gender" >Male</label>
+    <input id="gender2" type="radio" name="gender">
+    <label for="gender2" >Female</label><br><br>
+    <label for="weigth" >Weigth:</label>
+    <input id="weigth" placeholder="your weigth in kg" required><br><br>
+    <label for="heigth" >Heigth:</label>
+    <input id="heigth" placeholder="your heigth in cm" required><br><br>
+    <label for="age" >Age:</label>
+    <input id="age" placeholder="your age in years" required><br><br>
+    <p>Choose your phisical activity!</p><br><br>
+    <input id="one" type="radio" name="activity" value="1.2">
+    <label for="one" >No phisical activity. ( Seating job, 1-2  ligth training a week )</label><br><br>
+    <input id="two" type="radio" name="activity" value="1.3">
+    <label for="two" >Ligth activity. ( Wallking, swimming , 2 training a week )</label><br><br>
+    <input id="three" type="radio" name="activity" value="1.5">
+    <label for="three" >Moderate activity. (3-4 weigth training a week)</label><br><br>
+    <input id="four" type="radio" name="activity" value="1.7">
+    <label for="four" >Intensive activity. (5-6 weigth training a week)</label><br><br>
+    <input id="five" type="radio" name="activity" value="1.9">
+    <label for="five" >Extremely activity. ( Heavy physical job, 6-7 heavy training a week )</label><br><br>
+    <button id="button" onclick="calcCalory()">Calculate</button>
+    <p id="calory"></p>
+  </div>
+  <div class="photo"></div>
+</div>
+</body>
+</html>
