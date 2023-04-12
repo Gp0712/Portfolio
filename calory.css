@@ -210,11 +210,11 @@ input{
    margin-top: 6.5vw;
    margin-left: 39.5vw;
    }
- }#lang, #lang2{
+   #lang, #lang2{
    scale: 3;
    top: 4vw;
    right:5vw;
- }
+   }
    .main{
       flex-direction: column;
       height: 100%;
@@ -223,7 +223,7 @@ input{
       font-size: 2rem;
       margin-top: 10vw;
    }
-   .container{
+  .container{
       width: 91vw;
       font-size: 0.8rem;
       margin: 0 0 0 2vw;
@@ -232,12 +232,13 @@ input{
       width: 44vw;
       height: 35vw;
       margin-top: 0;
-   }
+   } 
    #button {
       width: 25vw;
       height: 6vw;
       font-size: 3.7vw;
    }
+}
 @media screen and (max-width: 365px) {
    body{
       height: 100vh;
