@@ -1,0 +1,508 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* outline: 1px red solid !important; visibility: visible !important;  */
+ }
+ :root{
+     --green: rgb(198, 246, 60);
+   --darkGreen: rgb(113, 184, 53);
+   --orange: rgb(231, 149, 41);
+   --black: rgb(0, 0, 0);
+   --gray: rgb(64, 64, 64);
+   --lightGray: rgb(211, 211, 211);
+   --darkGray: rgb(112, 108, 108);
+   --aliceblue: rgb(240, 248, 255);
+   --kalam: Kalam, cursive;
+   --numans: Numans, sans-serif;
+   --openSans: "Open Sans", sans-serif;
+   --orbitron: Orbitron, sans-serif;
+ }
+ /* Scrollbar for Chrome, Safari */
+ ::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+   background-color: var(--black);
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+   background-color: var(--green);
+ }
+body{
+   background-color: var(--gray);
+   width: 98vw;
+ }
+ .container{
+   width: 98vw;
+   height: auto;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-areas:
+      'name header header header header lang' 
+      ' arc arc arc arc clock clock'
+      ' birthDay birthDay birthDay birthDay clock clock'
+      ' xmas xmas xmas newYear newYear newYear'
+      ' own own own own own own';
+ }
+ div{
+    text-align: center;
+ }
+ .title{
+   margin-top: 2vw;
+ }
+ p{
+   padding: 1vw;
+   color: var(--aliceblue);
+   opacity: .7;
+   font-family: var(--openSans);
+ } 
+ h2{
+  color: var(--darkGreen);
+  margin-top: 1vw;
+  font-family: var(--kalam);
+  font-weight: 100;
+ }
+ input{
+  outline: none;
+  border: none;
+  width: 70%;
+  height: 50%;
+  background-color: var(--gray);
+  color: var(--aliceblue);
+  text-align: center;
+  margin-top: 0.6vw;
+ }
+ .input{
+    position: absolute;
+    width: 20%; 
+    height: 14%;
+    left: 50%;
+    transform: translateX(-50%); 
+    top: 50%;
+    border-radius: .3vw;
+    background-color: var(--gray);
+    box-shadow: -4px -4px 6px var(--darkGray) inset, 4px 4px 6px var(--black) inset;
+ } 
+ #output, #outputDate, #outputBirthday{
+    text-align: center; 
+    margin:4vw 0;
+    font-size: 1.5rem;
+ } 
+ .button{
+    position: absolute; 
+    width: 10%;
+    height: 10%;
+    left: 50%;
+    transform: translateX(-50%); 
+    top: 77%; 
+    border-radius: 10px 0;
+    background-color: var(--gray);
+    color: var(--aliceblue);
+ }
+ .button:hover{
+  cursor: pointer;
+  border-radius: 0 10px;
+  color: var(--darkGreen);
+ }
+
+ /* Header //////////////////////////////////// */
+ .name{
+  background-color: var(--gray);
+  margin: 1vw;
+  display: grid;
+  grid-template-areas: 'logo name';
+  justify-items: center;
+  align-content: center;
+  border-radius: .5vw;
+  box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+
+ }
+ .header{
+   background-color: var(--gray);
+   margin: 1vw;
+   grid-area: header;
+   border-radius: .5vw;
+   box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+ }
+ .logo{
+    position: relative;
+    width: 3vw;
+    height: 2.5vw;
+    margin-left: 1vw;
+    top:0vw;
+    grid-area: logo;
+    background-image: url('assets/logo-green.webp');
+    background-position: 0, 0 center;
+    background-size:cover;
+    cursor: pointer;
+ }
+ .nameGreen{
+   position: relative;
+   width: 11vw;
+   height: 5vw;
+   margin-right: 1vw;
+   top: 0.7vw;
+   left: 0vw;
+   grid-area: name;
+   background-image: url('assets/name-green.webp');
+   background-size: contain;
+   background-repeat: no-repeat;
+ } 
+ h1{
+  margin-top: 1vw;
+  color: var(--darkGreen);
+  font-family: var(--kalam);
+  font-weight: 100;
+ }
+ .lang{
+  background-color: var(--gray);
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-content: center;
+  margin: 1vw;
+  grid-area: lang;
+  border-radius: .5vw;
+  box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+ }
+ #lang1, #lang2{
+     width: 4vw;
+     height: 4vw;
+     border-radius: 50%;
+     box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+     background-image: url('assets/hun2.png');
+     background-position: center center;
+     background-size: 90% auto;
+     background-repeat: no-repeat;
+     position: relative
+ }
+ #lang2{
+  background-image: url('assets/eng2.png');
+ }
+
+ /* Calendar ////////////////////////////////// */
+ .clock{
+  margin: 1vw;
+  padding: 1vw;
+  grid-area: clock;
+  border-radius: .5vw;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-content: start;
+  gap: 4vw;
+  background-color: var(--gray);
+  box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+ }
+ .clockFace{
+  width: 10vw;
+  height: 10vw;
+  background-color: var(--gray);
+  position: relative;
+  border: 12px solid var(--gray);
+  border-radius: 50%;
+  box-shadow: -4px -4px 6px var(--green), -4px -4px 6px var(--darkGreen) inset;
+ }
+ .clockMidle{
+  width: 0.3vw;
+  height: 0.3vw;
+  border-radius: 50%;
+  background-color: var(--darkGreen);
+  position: absolute;
+  top: 4.3vw;
+  left: 50%;
+  transform: translateX(-50%);
+ }
+ .hand{
+  width: 50%;
+  height: 3px;
+  border-radius: 35%;
+  background-color: var(--darkGreen);
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+ }
+ .handHour{
+  width: 30%;
+  left: 20%;
+ }
+ .handMin{
+  width: 45%;
+  left: 5%;
+  
+ }
+ .handSec{
+  background-color: brown;
+ }
+.clockNumbers div{
+  position: absolute;
+  inset: 0px;
+  color:var(--green);
+  text-align: center;
+  transform: rotate(calc(90deg* var(--i)));
+} 
+.clockNumbers div b{
+ font-size: .8vw;
+ opacity: .6;
+ display: block;
+ transform: rotate(calc(-90deg* var(--i)));
+}
+.bigDot{
+  margin: -0.5vw 0vw 0vw 4.1vw;
+  width: 0.3vw;
+  height: 0.3vw;
+  border-radius: 50%;
+  background-color: var(--darkGreen);
+}
+.dots div{
+  position: absolute;
+  inset: 0px;
+  color:var(--green);
+  text-align: center;
+  transform: rotate(calc(30deg* var(--i)));
+
+}
+.dot{
+  margin: -0.35vw 0vw 0vw 4.2vw;
+  width: 0.1vw;
+  height: 0.1vw;
+  border-radius: 50%;
+  background-color: var(--darkGreen);
+  transform: rotate(calc(30deg* var(--i)));
+}
+.digitalClock, .today{
+  width: 17vw;
+  height: 3vw;
+  padding-top: 0.3vw;
+  font-size: 2vw;
+  background-color: var(--gray);
+  font-family: var(--orbitron);
+  color: var(--darkGreen);
+  border-radius: .5vw;
+  box-shadow: -4px -4px 6px var(--darkGray) inset, 4px 4px 6px var(--black) inset;
+} 
+.today{
+  height: 8vw;
+  line-height: 3.5vw;
+}
+
+ /* Arab-Roman Calculator ///////////////////// */
+ .arc{
+   margin: 1vw;
+   background-color: var(--gray);
+   border-radius: .5vw;
+   box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+   grid-area: arc;
+   position: relative;
+ }
+ .birthDay{
+  margin: 1vw;
+  background-color: var(--gray);
+  border-radius: .5vw;
+  box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+   grid-area: birthDay;
+   position: relative;
+ }
+ .xmas{
+   margin: 1vw;
+   background-color: var(--gray);
+   border-radius: .3vw;
+   box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+   grid-area: xmas;
+ }
+ .newYear{
+   margin: 1vw;
+   background-color: var(--gray);
+   border-radius: .3vw;
+   box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+   grid-area: newYear;
+ }
+ .ownDate{
+  margin: 1vw;
+  background-color: var(--gray);
+  border-radius: .5vw;
+  box-shadow: -4px -4px 6px var(--darkGray), 4px 4px 6px var(--black);
+   grid-area: own;
+   position: relative;
+ }
+@media screen and (max-width: 1400px) {
+  .button{
+    width: 15%;
+    height: 13%;
+  }
+  .clockFace{
+   border-width: 9px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container{
+    height: 107vw;
+  } 
+  #output, #outputDate, #outputBirthday{
+     margin:6vw 0;
+  }
+  .clockFace{
+   border-width: 8px;
+  } 
+  input{
+    margin-top: 0.7vw;
+  } 
+}
+@media screen and (max-width: 992px) {
+  .container{
+    grid-template-areas:
+      'name header header header header lang' 
+      ' arc arc arc arc clock clock'
+      ' birthDay birthDay birthDay birthDay birthDay birthDay'
+      ' xmas xmas xmas newYear newYear newYear'
+      ' own own own own own own';
+  } 
+  #output, #outputDate, #outputBirthday{
+     margin:9vw 0;
+  } 
+  input{
+    width: 70%;
+    height: 45%;
+    margin-top: 1.2vw;
+  }
+  .button{
+   width: 25%;
+   height: 12%;
+  }
+  .clockFace{
+   border-width: 6px;
+  }
+}
+@media screen and (max-width: 768px) {
+ .button{
+  width: 25%;
+ }
+ #output, #outputDate, #outputBirthday{
+    margin: 11vw 0;
+    font-size: 1rem;
+ }
+ .clockFace{
+  border-width: 4px;
+ }
+}
+@media screen and (max-width: 576px) {
+  .lang{
+    height: 17vw;
+  }
+  #lang1, #lang2 {
+    width: 10vw;
+    height: 10vw;
+  }
+  .logo {
+    width: 12vw;
+    height: 10vw;
+  }
+  .nameGreen {
+    position: relative;
+    width: 50vw;
+    height: 8vw;
+    margin-right: 1vw;
+    top: 2vw;
+    left: 0vw;
+  }
+  .container{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+   grid-template-areas:
+      'name lang'
+      'header header' 
+      'clock clock'
+      'arc arc'
+      'birthDay birthDay'
+      'xmas xmas'
+      'own own'
+      'newYear newYear';
+  }
+  .clock{
+    height: 40vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'title title title'
+      'today clockFace digitalClock';
+  }
+  .title{
+    grid-area: title;
+  }
+  .today{
+    grid-area: today;
+    width: 27vw;
+    height: 13vw;
+    margin: 8vw 4vw 8vw 2vw;
+    font-size: 0.7rem;
+    line-height: 5vw;
+    padding-top: 1.3vw;
+  }
+  .clockFace{
+    grid-area: clockFace;
+    width: 20vw;
+    height: 20vw;
+  }
+  .dot{
+    margin: 0.65vw 0vw 0vw 4.2vw;
+  }
+  .bigDot {
+    width: 0.7vw;
+    height: 0.7vw;
+    margin: -1vw 0vw 0vw 8.61vw;
+  }
+  .digitalClock{
+    grid-area: digitalClock;
+    width: 27vw;
+    height: 13vw;
+    margin: 8vw 8vw 8vw 3vw;
+    font-size: 0.9rem;
+    padding-top: 3.3vw;
+  }
+  .clockMidle{
+    top: 9.2vw
+  }
+  input{
+    margin-top: 2.4vw;
+    width: 70%;
+    height: 40%;
+  }
+  .input{
+    width: 35%;
+    top: 25vw;
+  }
+  #output, #outputDate, #outputBirthday {
+    margin:15vw 0 20vw 0;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+
+}
+@media screen and (max-width: 365px) {
+  .today{
+    font-size: 0.6rem;
+  }
+  .digitalClock{
+    font-size: 0.7rem;
+  }
+  h2{
+    font-size: 1.1rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .button{
+    width: 27%;
+    height: 16%;
+    color: var(--darkGreen);
+
+  }
+  #output, #outputDate, #outputBirthday {
+    margin:18vw 0 20vw 0;
+    font-size: 0.8rem;
+  }
+}
