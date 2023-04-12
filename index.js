@@ -308,3 +308,5 @@ contactMe.addEventListener("click", () => {
 closeContact.addEventListener("click", () => {
   popup.classList.remove("popupVisible");
 });
+
+
