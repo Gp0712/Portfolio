@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+     background-color: rgb(177, 18, 18);
+ }
+ h1{
+   text-align: center;
+   margin-top: 2em; 
+   color:rgb(245, 245, 245);
+ }
+ .container{
+    margin: auto;
+    padding: 2%; 
+    position:relative; 
+    border-radius: 10px; 
+    width:90vw; 
+    height:70vh; 
+    height: fit-content; 
+    background-color:rgb(245, 245, 245);
+ }
+ p{
+   text-align:center; 
+   padding-top: 2vh;
+ } 
+ input{
+    position:relative; 
+    left:auto; 
+    top:0px;
+ } 
+ #output{
+    text-align: center; 
+    padding-top:10px;
+ } 
+ #button{
+    width: 20vw;
+    height: 4vh;
+    color: rgb(177, 18, 18);
+    border-radius: 2vh;
+ }
+ #lang{
+     width: 45px;
+     height: 45px;
+     background-image: url('assets/hun.png');
+     background-size: cover ;
+     background-color: blue;
+     position:absolute;
+     top: 5px;
+     right: 5px;
+ }
+ #lang2{
+     width: 45px;
+     height: 45px;
+     background-image: url('assets/eng.png');
+     background-size: cover ;
+     background-color: blue;
+     position:absolute;
+     top: 5px;
+     right: 5px;
+ }
+ .logo{
+   position: relative;
+   top:2vh;
+   width: 16vw;
+   height: 6vh;
+   background-image: url("assets/logo-black3.png");
+   background-position: 0, 0 center;
+   background-size:cover;
+   scale:0.9;
+   cursor: pointer;
+}
