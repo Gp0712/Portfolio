@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arab-római szám átváltó</title>
+    <link rel="stylesheet" href="arc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Numans&family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600;1,800&family=Orbitron&display=swap"
+      rel="stylesheet">
+    <script src="arc.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="name">
+        <a href="index.html"><div class="logo"></div></a>
+        <div class="nameGreen"></div>
+      </div>
+        <div class="header">
+            <h1>Számoljunk !</h1>
+            <p>Kíváncsi vagy egy szám római-szám megfelelõjére,
+               vagy szeretnéd tudni mennyi idõs vagy pontosan, 
+               esetleg, hogy mennyi idõ van még karácsonyig, vagy a nyaralásodig,
+               ezen az oldalon megtudhatod.<br><br>
+               Jó számolgatást !
+            </p>
+        </div>
+        <div class="lang"><a href="arcEng.html"><div id="lang2"></div></a></div>
+        <div class="clock">
+          <h2 class="title">Naptár</h2>
+          <div id="today" class="today"></div>
+          <div class="clockFace">
+            <div class="hand handHour"></div>
+            <div class="hand handMin"></div>
+            <div class="hand handSec"></div>
+            <div class="clockMidle"></div>
+            <div class="dots">
+              <div style="--i:1"><div class="dot"></div></div>
+              <div style="--i:2"><div class="dot"></div></div>
+              <div style="--i:3"><div class="dot"></div></div>
+              <div style="--i:4"><div class="dot"></div></div>
+              <div style="--i:5"><div class="dot"></div></div>
+              <div style="--i:6"><div class="dot"></div></div>
+              <div style="--i:7"><div class="dot"></div></div>
+              <div style="--i:8"><div class="dot"></div></div>
+              <div style="--i:9"><div class="dot"></div></div>
+              <div style="--i:10"><div  class="dot"></div></div>
+              <div style="--i:11"><div  class="dot"></div></div>
+              <div style="--i:12"><div  class="dot"></div></div>
+            </div>
+              <div class="clockNumbers">
+                <div style="--i:1"><b>III</b><div class="bigDot"></div></div>
+                <div style="--i:2"><b>VI</b><div class="bigDot"></div></div>
+                <div style="--i:3"><b>IX</b><div class="bigDot"></div></div>
+                <div style="--i:4"><b>XII</b><div class="bigDot"></div></div>
+              </div>
+          </div>
+          <div id="digitalClock" class="digitalClock"></div>
+        </div>
+      <div class="arc">
+        <h2 class="title">Arab-római szám átváltó</h2>
+        <p>
+          Add meg a számot amit át szeretnél váltani római számmá, majd
+          kattints a "Számítás" gombra!
+        </p>
+        <div class="input"><input id="number"></div>
+        <p id="output"></p>
+        <button id="button" class="button" onclick="calculate()">Számítás</button>
+      </div>
+      <div class="birthDay">
+        <h2 class="title">Mennyi idõs is vagy?</h2>
+        <p>
+          Add meg a születési dátumod, majd
+          kattints a "Számítás" gombra!
+        </p>
+        <div class="input"><input id="birthday" placeholder="éééé/hh/nn" onclick="inputReset()"></div>
+        <p id="outputBirthday"></p>
+        <button class="button" onclick="getBirthday()">Számítás</button>
+      </div>
+      <div class="xmas">
+        <h2>Ennyire vagyunk még Karácsontól</h2>
+        <p id="outputXmas"></p>
+      </div>
+      <div class="newYear">
+        <h2>Ennyire vagyunk még Szilvesztertõl</h2>        
+        <p id="outputNewYear"></p>
+      </div>
+      <div class="ownDate">
+        <h2 class="title">Mennyit kell még várnod?</h2>
+        <p class="ownDateText">
+          Add meg a dátumot amit érdekel, majd
+          kattints a "Számítás" gombra!
+        </p>
+        <div class="input"><input id="date" placeholder="éééé/hh/nn" onclick="inputReset()"></div>
+        <p id="outputDate"></p>
+        <button class="button" onclick="getOwnDate()">Számítás</button>
+      </div>
+    </div>
+  </body>
+</html>

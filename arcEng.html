@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arab-római szám átváltó</title>
+    <link rel="stylesheet" href="arc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Numans&family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600;1,800&family=Orbitron&display=swap"
+      rel="stylesheet">
+    <script src="arcEng.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="name">
+        <a href="index.html"><div class="logo"></div></a>
+        <div class="nameGreen"></div>
+      </div>
+        <div class="header">
+            <h1>Let calculate !</h1>
+            <p>Are you curious about the Roman numeral equivalent of a number?
+                Or you want to know how old you are exactly,
+                maybe how much time is left until Christmas or your vacation?
+                You can find out on this page.<br><br>
+                Good math!
+            </p>
+        </div>
+        <div class="lang"><a href="arc.html"><div id="lang1"></div></a></div>
+        <div class="clock">
+          <h2 class="title">Calendar</h2>
+          <div id="today" class="today"></div>
+          <div class="clockFace">
+            <div class="hand handHour"></div>
+            <div class="hand handMin"></div>
+            <div class="hand handSec"></div>
+            <div class="clockMidle"></div>
+            <div class="dots">
+              <div style="--i:1"><div class="dot"></div></div>
+              <div style="--i:2"><div class="dot"></div></div>
+              <div style="--i:3"><div class="dot"></div></div>
+              <div style="--i:4"><div class="dot"></div></div>
+              <div style="--i:5"><div class="dot"></div></div>
+              <div style="--i:6"><div class="dot"></div></div>
+              <div style="--i:7"><div class="dot"></div></div>
+              <div style="--i:8"><div class="dot"></div></div>
+              <div style="--i:9"><div class="dot"></div></div>
+              <div style="--i:10"><div  class="dot"></div></div>
+              <div style="--i:11"><div  class="dot"></div></div>
+              <div style="--i:12"><div  class="dot"></div></div>
+            </div>
+              <div class="clockNumbers">
+                <div style="--i:1"><b>III</b><div class="bigDot"></div></div>
+                <div style="--i:2"><b>VI</b><div class="bigDot"></div></div>
+                <div style="--i:3"><b>IX</b><div class="bigDot"></div></div>
+                <div style="--i:4"><b>XII</b><div class="bigDot"></div></div>
+              </div>
+          </div>
+          <div id="digitalClock" class="digitalClock"></div>
+        </div>
+      <div class="arc">
+        <h2 class="title">Roman number calculator</h2>
+        <p>
+          Enter a number what you'd like to convert to roman number,
+          than click to the "Calculate" button!
+        </p>
+        <div class="input"><input id="number"></div>
+        <p id="output"></p>
+        <button id="button" class="button" onclick="calculate()">Calculate</button>
+      </div>
+      <div class="birthDay">
+        <h2 class="title">How old are you exactly?</h2>
+        <p>
+          Enter your date of birth,
+          than click to the "Calculate" button!
+        </p>
+        <div class="input"><input id="birthday" placeholder="dd/mm/yyyy" onclick="inputReset()"></div>
+        <p id="outputBirthday"></p>
+        <button class="button" onclick="getBirthday()">Calculate</button>
+      </div>
+      <div class="xmas">
+        <h2>That's how far we are from Christmas</h2>
+        <p id="outputXmas"></p>
+      </div>
+      <div class="newYear">
+        <h2>That's how far we are from New Year's Eve</h2>        
+        <p id="outputNewYear"></p>
+      </div>
+      <div class="ownDate">
+        <h2 class="title">How much longer do you have to wait?</h2>
+        <p>
+          Enter the date you are interested in, then
+          click on the "Calculate" button!
+        </p class="ownDateText">
+        <div class="input"><input id="date" placeholder="dd/mm/yyyy" onclick="inputReset()"></div>
+        <p id="outputDate"></p>
+        <button class="button" onclick="getOwnDate()">Calculate</button>
+      </div>
+    </div>
+  </body>
+</html>
